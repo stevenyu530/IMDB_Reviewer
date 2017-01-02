@@ -41,7 +41,6 @@ class ReviewForm(Form):
     moviereview = TextAreaField('',
                                 [validators.DataRequired(),
                                 validators.length(min=15)])
-
 @app.route('/')
 def index():
     form = ReviewForm(request.form)
